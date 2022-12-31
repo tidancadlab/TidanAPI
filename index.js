@@ -1,10 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
-require("dotenv").config();
 const userData = require("./Module/user");
 const expensesData = require("./Module/transactions");
 const userExpData = require("./Route/Routers");
-const { Router } = require("express");
 const port = 8080;
 const app = express();
 app.use(express.json());
